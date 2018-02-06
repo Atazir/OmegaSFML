@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+# Don't Ignore libraries I choose to include explicitly
+!/Lib/**
+
+# Visual Studio stuff
+[Dd]ebug/
+.vs/
