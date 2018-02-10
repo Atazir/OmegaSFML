@@ -1,5 +1,16 @@
 #include <SFML/Graphics.hpp>
+#include <tchar.h>
+#include "OmegaEngine.hpp"
 
+int main(int argc, _TCHAR* argv[])
+{
+	OmegaEngine::Initialize();
+	OmegaEngine::Start();
+
+	return 0;
+}
+
+/*
 int main()
 {
 	sf::RenderWindow window({ 1024, 769 }, "Hello World");
@@ -18,3 +29,4 @@ int main()
 		window.display();
 	}
 }
+*/
