@@ -132,11 +132,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Engine.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="OmegaEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="OmegaEngine.hpp" />
+    <ClInclude Include="Engine.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

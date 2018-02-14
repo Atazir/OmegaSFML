@@ -18,12 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OmegaEngine.cpp">
+    <ClCompile Include="Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="OmegaEngine.hpp">
+    <ClInclude Include="Engine.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
