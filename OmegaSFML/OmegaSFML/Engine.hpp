@@ -9,11 +9,8 @@ public:
 	static void Start();
 	static void Initialize();
 	
-	enum GameState { Uninitialized, ShowingSplash, Paused, ShowingMenu, Playing, Exiting };
+	enum GameState { Uninitialized, ShowingSplash, Paused, ShowingMenu, Playing, Exiting};
 
 private:
-	static bool isExiting();
 	static void GameLoop();
-
-	
 };
