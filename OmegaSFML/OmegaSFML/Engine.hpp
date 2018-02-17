@@ -8,9 +8,12 @@ class Omega
 public:
 	static void Start();
 	static void Initialize();
+
+	//static sf::RenderWindow _mainWindow;
 	
-	enum GameState { Uninitialized, ShowingSplash, Paused, ShowingMenu, Playing, Exiting};
+	enum GameState { Uninitialized, ShowingSplash, Paused, ShowingMenu, Playing, Exiting };
 
 private:
 	static void GameLoop();
+	
 };

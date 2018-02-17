@@ -133,13 +133,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CheckResources.cpp" />
+    <ClCompile Include="Components.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SplashScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CheckResources.hpp" />
+    <ClInclude Include="Components.h" />
     <ClInclude Include="Engine.hpp" />
+    <ClInclude Include="GameObject.hpp" />
     <ClInclude Include="SplashScreen.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

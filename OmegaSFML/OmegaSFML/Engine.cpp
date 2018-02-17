@@ -4,24 +4,32 @@
 
 using namespace std;
 Omega::GameState _gameState;
-//RenderWindow _mainWindow(VideoMode(1024, 768, 32), "OmegaGame");
+//RenderWindow _mainWindow;
+//This render window declaration is for line 42 to have a reference to else it throws an error, however it also gives me a break in the code (not sure why)
 
 
 void Omega::Initialize(void)
 {
-	//SplashScreen::Show();
+	//_gameState = ShowingSplash;
+	//RenderWindow 
+	RenderWindow _mainWindow;
+	_mainWindow.create(sf::VideoMode(1920, 1080, 32), "OmegaGame");
+	SplashScreen::Show(_mainWindow);
 }
 
 void Omega::Start(void)
 {
-	if (_gameState != Uninitialized)
+	if (_gameState = Uninitialized)
 	{
 		cout << "GameState is uninitialized; quiting." << endl;
 		cin.get();
-		//return;
+		return;
 	}
 
-	RenderWindow _mainWindow(VideoMode(1024, 768, 32), "OmegaGame");
+	//Creates the window
+	//RenderWindow _mainWindow(VideoMode(1024, 768, 32), "OmegaGame");
+	//_mainWindow = VideoMode(1024, 768, 32), "OmegaGame";
+
 	_gameState = Omega::Playing;
 	//cin.get(); //stall to show window is open
 
@@ -39,5 +47,15 @@ void Omega::Start(void)
 
 void Omega::GameLoop()
 {
-	
+	//while (_mainWindow.isOpen())
+	//{
+	//	// check all the window's events that were triggered since the last iteration of the loop
+	//	sf::Event event;
+	//	while (_mainWindow.pollEvent(event))
+	//	{
+	//		// "close requested" event: we close the window
+	//		if (event.type == sf::Event::Closed)
+	//			_mainWindow.close();
+	//	}
+	//}
 }

@@ -4,15 +4,22 @@
 void SplashScreen::Show(RenderWindow & renderWindow)
 {
 	sf::Image image;
-	if (image.loadFromFile("Images/SplashScreen.jpeg") != true)
+	if (image.loadFromFile("../../Lib/Images/SplashScreen.jpeg") != true)
 	{
 		printf("Didn't load the file");
 		return;
 	}
 
-	//Sprite sprite(image);
+	Sprite sprite;
+	//sprite.loadTextureFromImage(image);
+	sf::Texture texture;
+	texture.loadFromImage(image, IntRect());
+	sprite.setTexture(texture);
 
-	//renderWindow.draw(sprite);
-	//renderWindow.display();
+	//sf::Texture sprite;
+	//sprite.loadFromImage(image);
+
+	renderWindow.draw(sprite);
+	renderWindow.display();
 
 }
