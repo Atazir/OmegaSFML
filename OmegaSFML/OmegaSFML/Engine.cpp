@@ -10,11 +10,15 @@ Omega::GameState _gameState;
 
 void Omega::Initialize(void)
 {
-	//_gameState = ShowingSplash;
+	_gameState = ShowingSplash;
 	//RenderWindow 
 	RenderWindow _mainWindow;
 	_mainWindow.create(sf::VideoMode(1920, 1080, 32), "OmegaGame");
-	SplashScreen::Show(_mainWindow);
+	while (_gameState = ShowingSplash)
+	{
+		SplashScreen::Show(_mainWindow);
+	}
+	
 }
 
 void Omega::Start(void)
@@ -30,7 +34,7 @@ void Omega::Start(void)
 	//RenderWindow _mainWindow(VideoMode(1024, 768, 32), "OmegaGame");
 	//_mainWindow = VideoMode(1024, 768, 32), "OmegaGame";
 
-	_gameState = Omega::Playing;
+	//_gameState = Omega::Playing;
 	//cin.get(); //stall to show window is open
 
 	while (_gameState != Exiting)
@@ -58,4 +62,31 @@ void Omega::GameLoop()
 	//			_mainWindow.close();
 	//	}
 	//}
+	switch (_gameState)
+	{
+		case ShowingSplash:
+		{
+
+		}
+		case Uninitialized:
+		{
+
+		}
+		case Paused:
+		{
+
+		}
+		case ShowingMenu:
+		{
+
+		}
+		case Playing:
+		{
+
+		}
+		case Exiting:
+		{
+
+		}
+	}
 }
