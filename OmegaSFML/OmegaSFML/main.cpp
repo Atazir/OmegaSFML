@@ -5,9 +5,9 @@
 int main(int argc, _TCHAR* argv[])
 {
 	//Checks resources and prints them.
-	CheckResources::PrintResults();
 
 	Omega::Initialize();
+	CheckResources::PrintResults();
 	Omega::Start();
 
 	return 0;

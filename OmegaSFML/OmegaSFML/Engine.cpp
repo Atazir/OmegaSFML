@@ -4,7 +4,7 @@
 
 using namespace std;
 Omega::GameState _gameState;
-//RenderWindow _mainWindow;
+sf::RenderWindow Omega::_mainWindow;
 //This render window declaration is for line 42 to have a reference to else it throws an error, however it also gives me a break in the code (not sure why)
 
 
@@ -12,7 +12,7 @@ void Omega::Initialize(void)
 {
 	_gameState = ShowingSplash;
 	//RenderWindow 
-	RenderWindow _mainWindow;
+	//RenderWindow _mainWindow;
 	_mainWindow.create(sf::VideoMode(1920, 1080, 32), "OmegaGame");
 	while (_gameState = ShowingSplash)
 	{
@@ -66,7 +66,7 @@ void Omega::GameLoop()
 	{
 		case ShowingSplash:
 		{
-
+			cout << "Showing Splash" << endl;
 		}
 		case Uninitialized:
 		{
@@ -82,7 +82,7 @@ void Omega::GameLoop()
 		}
 		case Playing:
 		{
-
+			cout << "Playing" << endl;
 		}
 		case Exiting:
 		{

@@ -9,7 +9,7 @@ public:
 	static void Start();
 	static void Initialize();
 
-	//static sf::RenderWindow _mainWindow;
+	static RenderWindow _mainWindow;
 	
 	enum GameState { Uninitialized, ShowingSplash, Paused, ShowingMenu, Playing, Exiting };
 
