@@ -143,6 +143,17 @@ cout << endl;
 //Run these functions
 CheckResources::ReadCPUSpeed();
 CheckResources::ReadCPUArchitecture();
+}
 
-cin.get();
+void CheckResources::CheckRequirements()
+{
+	if (CheckResources::CheckStorage(536870912) && CheckResources::CheckMemory(1000000, 1000000))
+	{
+		return;
+	}
+	else
+	{
+		cout << "Not enough resources." << endl;
+		exit(0);
+	}
 }

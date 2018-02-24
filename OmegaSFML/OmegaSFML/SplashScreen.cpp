@@ -4,7 +4,7 @@
 void SplashScreen::Show(RenderWindow & renderWindow)
 {
 	sf::Image image;
-	if (image.loadFromFile("../../Lib/Images/SplashScreen.jpeg") != true)
+	if (image.loadFromFile("../../Assets/SplashScreen.jpeg") != true)
 	{
 		printf("Didn't load the file");
 		return;

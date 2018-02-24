@@ -140,19 +140,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaseComponent.cpp" />
     <ClCompile Include="CheckResources.cpp" />
-    <ClCompile Include="Components.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SplashScreen.cpp" />
+    <ClCompile Include="TransformComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseComponent.hpp" />
     <ClInclude Include="CheckResources.hpp" />
-    <ClInclude Include="Components.h" />
     <ClInclude Include="Engine.hpp" />
     <ClInclude Include="GameObject.hpp" />
+    <ClInclude Include="GameObjectManager.hpp" />
     <ClInclude Include="SplashScreen.hpp" />
+    <ClInclude Include="TransformComponent.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

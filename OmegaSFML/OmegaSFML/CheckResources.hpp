@@ -17,4 +17,5 @@ public:
 	static DWORD ReadCPUSpeed();
 	static string ReadCPUArchitecture();
 	static void PrintResults();
+	static void CheckRequirements();
 };

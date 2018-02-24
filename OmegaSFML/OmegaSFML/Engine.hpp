@@ -1,5 +1,6 @@
 #include "SFML/Window.hpp"
 #include "SFML/Graphics.hpp"
+#include "GameObjectManager.hpp"
 
 using namespace sf;
 
@@ -9,11 +10,12 @@ public:
 	static void Start();
 	static void Initialize();
 
-	static RenderWindow _mainWindow;
-	
-	enum GameState { Uninitialized, ShowingSplash, Paused, ShowingMenu, Playing, Exiting };
-
 private:
 	static void GameLoop();
-	
+
+	enum GameState { Uninitialized, ShowingSplash, Paused, ShowingMenu, Playing, Exiting };
+
+	static GameState _gameState;
+	static RenderWindow _mainWindow;
+	static GameObjectManager _gameObjectManager;
 };
