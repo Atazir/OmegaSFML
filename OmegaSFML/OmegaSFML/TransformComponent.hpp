@@ -1,6 +1,6 @@
 #pragma once
 #include "BaseComponent.hpp"
-#include "SFML/Graphics.hpp"
+#include <SFML/Graphics.hpp>
 
 struct Vector3
 {

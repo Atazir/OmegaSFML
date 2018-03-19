@@ -22,7 +22,12 @@ void GameObject::Start()
 
 void GameObject::Update(float msec) 
 {
-	
+	if (m_Parent) { //This node has a parent...
+		//worldTransform = m_Parent->worldTransform * transform;
+	}
+	else { //Root node, world transform is local transform!
+		//worldTransform = TransformComponent mat4(1.0f) * transform.transformMatrix;
+	}
 }
 
 void GameObject::LateUpdate(float msec) 

@@ -8,7 +8,6 @@
 class GameObjectManager
 {
 public:
-	GameObjectManager();
 	GameObject* CreateObject();
 
 	void Update(float msec);

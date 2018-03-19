@@ -3,7 +3,7 @@
 void TransformComponent::Awake()
 {
 	sf::Transform transform;
-	//glLoadMatrixf(transform.getMatrix());
+	sf::Transform getMatrix(void);
 	sf::Transform mat4;
 	//Model = glm::mat4(1.0f);
 	//Model = glm::translate(Model, glm::vec3(m_Position.x, m_Position.y, m_Position.z));

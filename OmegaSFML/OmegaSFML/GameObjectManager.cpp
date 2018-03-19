@@ -5,31 +5,34 @@ using namespace std;
 
 int GameObjectManager::nextObjectID = 0;
 
-GameObjectManager::GameObjectManager()
+void GameObjectManager::Awake() 
 {
-	cout << "Print this" << endl;
-}
-
-void GameObjectManager::Awake() {
-	for (std::map<int, GameObject*>::iterator i = m_Objects.begin(); i != m_Objects.end(); ++i) {
+	for (map<int, GameObject*>::iterator i = m_Objects.begin(); i != m_Objects.end(); ++i) 
+	{
 		(i->second)->Awake();
 	}
 }
 
-void GameObjectManager::Start() {
-	for (std::map<int, GameObject*>::iterator i = m_Objects.begin(); i != m_Objects.end(); ++i) {
+void GameObjectManager::Start() 
+{
+	for (map<int, GameObject*>::iterator i = m_Objects.begin(); i != m_Objects.end(); ++i) 
+	{
 		(i->second)->Start();
 	}
 }
 
-void GameObjectManager::Update(float msec) {
-	for (std::map<int, GameObject*>::iterator i = m_Objects.begin(); i != m_Objects.end(); ++i) {
+void GameObjectManager::Update(float msec) 
+{
+	for (map<int, GameObject*>::iterator i = m_Objects.begin(); i != m_Objects.end(); ++i) 
+	{
 		(i->second)->Update(msec);
 	}
 }
 
-void GameObjectManager::LateUpdate(float msec) {
-	for (std::map<int, GameObject*>::iterator i = m_Objects.begin(); i != m_Objects.end(); ++i) {
+void GameObjectManager::LateUpdate(float msec) 
+{
+	for (map<int, GameObject*>::iterator i = m_Objects.begin(); i != m_Objects.end(); ++i) 
+	{
 		(i->second)->LateUpdate(msec);
 	}
 }

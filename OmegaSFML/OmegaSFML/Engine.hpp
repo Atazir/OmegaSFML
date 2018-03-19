@@ -1,6 +1,8 @@
-#include "SFML/Window.hpp"
-#include "SFML/Graphics.hpp"
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
+//#include <SFML/Audio.hpp>
 #include "GameObjectManager.hpp"
+
 
 using namespace sf;
 
@@ -11,7 +13,7 @@ public:
 	static void Initialize();
 
 private:
-	static void GameLoop();
+	static void GameLoop(sf::Time time);
 
 	enum GameState { Uninitialized, ShowingSplash, Paused, ShowingMenu, Playing, Exiting };
 
