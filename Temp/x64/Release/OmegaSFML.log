@@ -1,44 +1,8 @@
 ﻿  Engine.cpp
-d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\GameObject.hpp(11): error C2011: 'GameObject': 'class' type redefinition
-  d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\GameObject.hpp(11): note: see declaration of 'GameObject'
-d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\GameObjectManager.hpp(9): error C2011: 'GameObjectManager': 'class' type redefinition
-  d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\GameObjectManager.hpp(9): note: see declaration of 'GameObjectManager'
-d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\Engine.hpp(10): error C2011: 'Omega': 'class' type redefinition
-  d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\Engine.hpp(10): note: see declaration of 'Omega'
-Engine.cpp(21): error C2027: use of undefined type 'Omega'
-  d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\Engine.hpp(10): note: see declaration of 'Omega'
-Engine.cpp(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-Engine.cpp(21): error C2146: syntax error: missing ';' before identifier '_gameState'
-Engine.cpp(22): error C2027: use of undefined type 'Omega'
-  d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\Engine.hpp(10): note: see declaration of 'Omega'
-Engine.cpp(23): error C2027: use of undefined type 'Omega'
-  d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\Engine.hpp(10): note: see declaration of 'Omega'
-Engine.cpp(23): error C2079: '_gameObjectManager' uses undefined class 'GameObjectManager'
-Engine.cpp(25): error C2027: use of undefined type 'Omega'
-  d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\Engine.hpp(10): note: see declaration of 'Omega'
-Engine.cpp(27): error C2065: '_gameState': undeclared identifier
-Engine.cpp(27): error C2065: 'ShowingSplash': undeclared identifier
-Engine.cpp(61): error C2027: use of undefined type 'Omega'
-  d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\Engine.hpp(10): note: see declaration of 'Omega'
-Engine.cpp(61): error C3861: 'Start': identifier not found
-Engine.cpp(64): error C2027: use of undefined type 'Omega'
-  d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\Engine.hpp(10): note: see declaration of 'Omega'
-Engine.cpp(66): error C2065: '_gameState': undeclared identifier
-Engine.cpp(66): error C2065: 'Uninitialized': undeclared identifier
-Engine.cpp(72): error C2228: left of '.Awake' must have class/struct/union
-  Engine.cpp(72): note: type is 'int'
-Engine.cpp(75): error C2228: left of '.Start' must have class/struct/union
-  Engine.cpp(75): note: type is 'int'
-Engine.cpp(77): error C2065: '_gameState': undeclared identifier
-Engine.cpp(77): error C2065: 'Playing': undeclared identifier
-Engine.cpp(92): error C2065: '_gameState': undeclared identifier
-Engine.cpp(92): error C2065: 'Exiting': undeclared identifier
-Engine.cpp(95): error C3861: 'GameLoop': identifier not found
-Engine.cpp(101): error C2027: use of undefined type 'Omega'
-  d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\Engine.hpp(10): note: see declaration of 'Omega'
-Engine.cpp(109): error C2228: left of '.Update' must have class/struct/union
-  Engine.cpp(109): note: type is 'int'
-Engine.cpp(112): error C2228: left of '.LateUpdate' must have class/struct/union
-  Engine.cpp(112): note: type is 'int'
-Engine.cpp(121): error C2065: '_gameState': undeclared identifier
-Engine.cpp(121): error C2065: 'Exiting': undeclared identifier
+  WindowManager.cpp
+  Generating code
+  5 of 360 functions ( 1.4%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    8 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  OmegaSFML.vcxproj -> D:\Users\Cody\Documents\Files\School\Y3S2\SFML_Engines\Omega\OmegaSFML\\..\Game\x64\Release\OmegaSFML.exe
