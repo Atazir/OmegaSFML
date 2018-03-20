@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <iostream>
-#include "GameObject.hpp"
 #include <map>
 #include <list>
 #include <iterator>
+
+#include "GameObject.hpp"
+#include "PhysicsManager.hpp"
 
 class GameObjectManager
 {

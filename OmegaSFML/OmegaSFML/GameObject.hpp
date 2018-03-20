@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "BaseComponent.hpp"
 #include "TransformComponent.hpp"
+#include "RigidbodyComponent.hpp"
 #include <iostream>
 #include <list>
 #include <vector>
@@ -24,7 +25,8 @@ public:
 	void SetParent(GameObject& parent) { m_Parent = &parent; }
 	void AddChild(GameObject* child);
 
-	TransformComponent transform; //This objects local transform
+	TransformComponent m_Transform; //This objects local transform
+	RigidbodyComponent m_Rigidbody;
 
 private:
 	int m_UniqueID;

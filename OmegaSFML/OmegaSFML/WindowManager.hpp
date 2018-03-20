@@ -7,5 +7,4 @@ class WindowManager
 {
 public:
 	static void Show(RenderWindow& window);
-
 };

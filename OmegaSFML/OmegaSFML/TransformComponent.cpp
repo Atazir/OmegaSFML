@@ -1,11 +1,21 @@
 #include "TransformComponent.hpp"
 
+using namespace sf;
+
 void TransformComponent::Awake()
 {
-	sf::Transform transform;
-	sf::Transform getMatrix(void);
-	sf::Transform mat4;
-	//Model = glm::mat4(1.0f);
+	
+	//m_Transform.getMatrix();
+	//
+	//m_Transform.translate(Vector2f(m_Position.x, m_Position.y));
+	//m_Transform.rotate(0, Vector2f(m_Position.x, m_Rotation.x));
+	//m_Transform.rotate(0, Vector2f(m_Position.y, m_Rotation.y));
+	//m_Transform.scale(1, 1);
+	//
+	//transformMatrix.getMatrix();
+	//transformMatrix = m_Transform;
+
+	//sf::Transform mat4 Model;
 	//Model = glm::translate(Model, glm::vec3(m_Position.x, m_Position.y, m_Position.z));
 	//Model = glm::rotate(Model, glm::radians(m_Rotation.x), X_AXIS);
 	//Model = glm::rotate(Model, glm::radians(m_Rotation.y), Y_AXIS);

@@ -1,15 +1,4 @@
 #include "Engine.hpp"
-#include "WindowManager.hpp"
-
-#include <cassert>
-#include <Windows.h>
-#include <direct.h>
-#include <math.h>
-#include <iostream>
-#include <iomanip>
-#include <string>
-#include <memory>
-#include <stdexcept>
 
 using namespace std;
 
@@ -21,6 +10,7 @@ string ReadCPUArchitecture();
 Omega::GameState Omega::_gameState;
 RenderWindow Omega::_mainWindow;
 GameObjectManager Omega::_gameObjectManager;
+PhysicsManager Omega::_physicsManager;
 
 void Omega::Initialize(void)
 {
@@ -58,6 +48,7 @@ void Omega::Initialize(void)
 	}
 
 	Sleep(1000 * 5);
+	cout << "Starting" << endl;
 	Omega::Start();
 }
 
@@ -70,11 +61,18 @@ void Omega::Start(void)
 
 	//Call other Awake functions for required pieces of the Engine here.
 	_gameObjectManager.Awake();
+	_physicsManager.Awake();
 
 	//Call other Start functions for required pieces of the Engine here.
 	_gameObjectManager.Start();
+	_physicsManager.Start();
 
+	//Clear the splash screen once the game starts.
 	_gameState = Playing;
+	_mainWindow.clear();
+	_mainWindow.display();
+
+	//Create a clock that begins keeping track of elapsed time on creation.
 	sf::Clock t_clock;
 
 	/*sf::Music music;
@@ -107,9 +105,11 @@ void Omega::GameLoop(sf::Time time)
 
 		//update systems
 		_gameObjectManager.Update(0);
+		_physicsManager.Update(0);
 
 		//later update all systems
 		_gameObjectManager.LateUpdate(0);
+		_physicsManager.LateUpdate(0);
 
 		// check all the window's events that were triggered since the last iteration of the loop
 		sf::Event event;
