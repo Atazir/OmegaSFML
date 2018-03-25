@@ -33,4 +33,7 @@ private:
 	static RenderWindow _mainWindow;
 	static GameObjectManager _gameObjectManager;
 	static PhysicsManager _physicsManager;
+
+	//string Player;
+	//string Opponent;
 };

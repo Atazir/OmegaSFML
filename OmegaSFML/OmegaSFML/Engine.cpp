@@ -75,6 +75,14 @@ void Omega::Start(void)
 	//Create a clock that begins keeping track of elapsed time on creation.
 	sf::Clock t_clock;
 
+	//Create the player object from the object manager, which has proper components attached.
+	
+	GameObject* playerObject = _gameObjectManager.CreateObject();
+
+	//Create an enemy/interactable physics-wise character in the world with the player.
+	
+	GameObject* opponentObject = _gameObjectManager.CreateObject();
+
 	/*sf::Music music;
 
 	if (!music.openFromFile("Audio/MainTrack.ogg"))

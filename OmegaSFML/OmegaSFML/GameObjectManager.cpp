@@ -42,5 +42,7 @@ GameObject* GameObjectManager::CreateObject()
 	GameObject* newObj = new GameObject(nextObjectID++);
 	m_Objects[newObj->GetObjectID()] = newObj;
 
+	BaseComponent* baseComponent = new BaseComponent();
+
 	return newObj;
 }

@@ -2,9 +2,15 @@
 
 using namespace sf;
 
-void TransformComponent::Awake()
+TransformComponent::TransformComponent()
 {
 	
+}
+
+void TransformComponent::Awake()
+{
+	std::cout << "Transform component is awake" << std::endl;
+	//m_Transform.getMatrix();
 	//m_Transform.getMatrix();
 	//
 	//m_Transform.translate(Vector2f(m_Position.x, m_Position.y));
