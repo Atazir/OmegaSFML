@@ -3,8 +3,8 @@
 BaseComponent::BaseComponent()
 {
 	std::cout << "This Added a Component." << std::endl;
-	TransformComponent* myTransform = new TransformComponent();
-	AddTransform(myTransform);	
+	//TransformComponent* myTransform = new TransformComponent();
+	//AddTransform(myTransform);
 }
 
 BaseComponent::~BaseComponent()
@@ -12,8 +12,8 @@ BaseComponent::~BaseComponent()
 	
 }
 
-void BaseComponent::AddTransform(TransformComponent* transform)
-{
-	std::cout << "This Added a transform." << std::endl;
-}
+//void BaseComponent::AddTransform(TransformComponent* transform)
+//{
+//	std::cout << "This Added a transform." << std::endl;
+//}
 

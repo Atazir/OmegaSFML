@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "BaseComponent.hpp"
-//#include "TransformComponent.hpp"
+#include "TransformComponent.hpp"
 //#include "RigidbodyComponent.hpp"
 #include <iostream>
 #include <list>
@@ -15,7 +15,7 @@ public:
 
 	int GetObjectID() const { return m_UniqueID; }
 
-	void AddComponent(BaseComponent* component);
+	void AddComponent(BaseComponent* component, TransformComponent* transform);
 
 	void Update(float msec);
 	void Awake();

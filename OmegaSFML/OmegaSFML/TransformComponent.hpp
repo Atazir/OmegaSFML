@@ -1,6 +1,6 @@
 #pragma once
-//#include "BaseComponent.hpp"
-#include <SFML\Graphics.hpp>
+#include "BaseComponent.hpp"
+//#include <SFML\Graphics.hpp>
 #include <iostream>
 
 struct Vector3
@@ -21,22 +21,32 @@ public:
 	float x, y;
 };
 
-//class TransformComponent : public BaseComponent
-class TransformComponent
+class TransformComponent: public BaseComponent
+//class TransformComponent
 {
 public:
 	//Vector3f m_Position;
 	//Vector3f m_Rotation;
 	//Vector3f m_Scale;
 
-	TransformComponent::TransformComponent();
+	TransformComponent();
+	//~TransformComponent();
+
+	void AddTransform(sf::Transform transform);
+
+	//sf::Transform m_Transform;
 
 	void Awake();
 	void Start();
 	void Update();
 	void LateUpdate();
+
+	//void Awake();
+	//void Start();
+	//void Update();
+	//void LateUpdate();
 	
-	//Transform m_Transform;
+	sf::Transform m_Transform;
 	//Transform transformMatrix;
 };
 

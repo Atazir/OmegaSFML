@@ -1,10 +1,9 @@
 #include "TransformComponent.hpp"
 
-using namespace sf;
-
 TransformComponent::TransformComponent()
 {
-	
+	AddTransform(m_Transform);
+	std::cout << "Transform added properly." << std::endl;
 }
 
 void TransformComponent::Awake()
@@ -37,6 +36,7 @@ void TransformComponent::Start()
 
 void TransformComponent::Update()
 {
+	//std::cout << "The Transform component is updating frequently." << std::endl;
 	// Change later to only happen when my transform changes.
 	//glm::mat4 Model;
 	//Model = glm::mat4(1.0f);
@@ -50,5 +50,10 @@ void TransformComponent::Update()
 
 void TransformComponent::LateUpdate()
 {
+	//std::cout << "The Transform component is updating frequently." << std::endl;
+}
 
+void TransformComponent::AddTransform(sf::Transform transform)
+{
+	std::cout << "This Added a Transform." << std::endl;
 }

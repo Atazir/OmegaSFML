@@ -5,6 +5,7 @@ using namespace std;
 
 int GameObjectManager::nextObjectID = 0;
 
+
 void GameObjectManager::Awake() 
 {
 	for (map<int, GameObject*>::iterator i = m_Objects.begin(); i != m_Objects.end(); ++i) 
@@ -40,9 +41,12 @@ void GameObjectManager::LateUpdate(float msec)
 GameObject* GameObjectManager::CreateObject()
 {
 	GameObject* newObj = new GameObject(nextObjectID++);
-	m_Objects[newObj->GetObjectID()] = newObj;
 
 	BaseComponent* baseComponent = new BaseComponent();
+	TransformComponent* objTransform = new TransformComponent();
+	newObj->AddComponent(baseComponent, objTransform);
+
+	m_Objects[newObj->GetObjectID()] = newObj;
 
 	return newObj;
 }

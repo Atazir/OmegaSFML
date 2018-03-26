@@ -81,7 +81,7 @@ void Omega::Start(void)
 
 	//Create an enemy/interactable physics-wise character in the world with the player.
 	
-	GameObject* opponentObject = _gameObjectManager.CreateObject();
+	//GameObject* opponentObject = _gameObjectManager.CreateObject();
 
 	/*sf::Music music;
 
