@@ -1,11 +1,13 @@
+#pragma once
 #include <iostream>
 #include "BaseComponent.hpp"
-#include "SFML\Window.hpp"
+//#include "SFML\Window.hpp"
 //#include "GameObjectManager.hpp"
 
 class SpriteComponent: public BaseComponent
 {
 public:
+
 	SpriteComponent();
 	~SpriteComponent();
 

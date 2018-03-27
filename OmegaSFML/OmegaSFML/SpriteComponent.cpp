@@ -1,6 +1,7 @@
-//#include "Engine.hpp"
+#include "Engine.hpp"
 #include "SpriteComponent.hpp"
 
+sf::RenderWindow _mainWindow;
 
 int SpriteComponent::nextSpriteID = 0;
 
@@ -43,8 +44,9 @@ void SpriteComponent::Draw()
 	//std::cout << "Draw is being called" << std::endl;
 
 	//RenderWindow _mainWindow;
-	//
-	//_mainWindow.clear();
-	//_mainWindow.draw(m_Sprite);
-	//_mainWindow.display();
+	
+	Omega::_mainWindow.clear();
+	Omega::_mainWindow.draw(m_Sprite);
+	Omega::_mainWindow.display();
+	//std::cout << "Draw is being called" << std::endl;
 }

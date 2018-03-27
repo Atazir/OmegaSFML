@@ -22,6 +22,7 @@ class Omega
 public:
 	static void Start();
 	static void Initialize();
+	static RenderWindow _mainWindow;
 
 private:
 	static void GameLoop(sf::Time time);
@@ -29,7 +30,7 @@ private:
 	enum GameState { Uninitialized, ShowingSplash, Paused, ShowingMenu, Playing, Exiting };
 
 	static GameState _gameState;
-	static RenderWindow _mainWindow;
+	
 	static GameObjectManager _gameObjectManager;
 	static PhysicsManager _physicsManager;
 
