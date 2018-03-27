@@ -1,4 +1,5 @@
 #include "Engine.hpp"
+//#include "SpriteComponent.hpp"
 
 using namespace std;
 
@@ -59,6 +60,14 @@ void Omega::Start(void)
 		return;
 	}
 
+	//Create the player object from the object manager, which has proper components attached.
+
+	GameObject* playerObject = _gameObjectManager.CreateObject();
+
+	//Create an enemy/interactable physics-wise character in the world with the player.
+
+	//GameObject* opponentObject = _gameObjectManager.CreateObject();
+
 	//Call other Awake functions for required pieces of the Engine here.
 	_gameObjectManager.Awake();
 	_physicsManager.Awake();
@@ -75,14 +84,7 @@ void Omega::Start(void)
 	//Create a clock that begins keeping track of elapsed time on creation.
 	sf::Clock t_clock;
 
-	//Create the player object from the object manager, which has proper components attached.
-	
-	GameObject* playerObject = _gameObjectManager.CreateObject();
-
-	//Create an enemy/interactable physics-wise character in the world with the player.
-	
-	//GameObject* opponentObject = _gameObjectManager.CreateObject();
-
+	///Music for main game loop goes here.
 	/*sf::Music music;
 
 	if (!music.openFromFile("Audio/MainTrack.ogg"))
@@ -118,6 +120,10 @@ void Omega::GameLoop(sf::Time time)
 		//later update all systems
 		_gameObjectManager.LateUpdate(0);
 		_physicsManager.LateUpdate(0);
+
+		//_mainWindow.draw(_gameObjectManager.);
+		//_mainWindow.clear();
+		//_mainWindow.display();
 
 		// check all the window's events that were triggered since the last iteration of the loop
 		sf::Event event;

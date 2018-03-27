@@ -1,8 +1,28 @@
-﻿  GameObjectManager.cpp
+﻿  Engine.cpp
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\TransformComponent.hpp(9): error C3646: 'm_Position': unknown override specifier
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\TransformComponent.hpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\PhysicsManager.hpp(24): error C2061: syntax error: identifier 'RigidbodyComponent'
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\PhysicsManager.hpp(31): error C2061: syntax error: identifier 'RigidbodyComponent'
+  GameObject.cpp
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\TransformComponent.hpp(9): error C3646: 'm_Position': unknown override specifier
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\TransformComponent.hpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  GameObjectManager.cpp
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\TransformComponent.hpp(9): error C3646: 'm_Position': unknown override specifier
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\TransformComponent.hpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  main.cpp
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\TransformComponent.hpp(9): error C3646: 'm_Position': unknown override specifier
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\TransformComponent.hpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\PhysicsManager.hpp(24): error C2061: syntax error: identifier 'RigidbodyComponent'
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\PhysicsManager.hpp(31): error C2061: syntax error: identifier 'RigidbodyComponent'
+  PhysicsManager.cpp
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\PhysicsManager.hpp(24): error C2061: syntax error: identifier 'RigidbodyComponent'
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\PhysicsManager.hpp(31): error C2061: syntax error: identifier 'RigidbodyComponent'
+  RigidbodyComponent.cpp
   TransformComponent.cpp
-  Generating code
-  3 of 511 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    10 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  OmegaSFML.vcxproj -> D:\Users\Cody\Documents\Files\School\Y3S2\SFML_Engines\Omega\OmegaSFML\\..\Game\x64\Release\OmegaSFML.exe
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\TransformComponent.hpp(9): error C3646: 'm_Position': unknown override specifier
+d:\users\cody\documents\files\school\y3s2\sfml_engines\omega\omegasfml\omegasfml\TransformComponent.hpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+TransformComponent.cpp(12): error C2065: 'm_Position': undeclared identifier
+TransformComponent.cpp(12): error C2228: left of '.x' must have class/struct/union
+  TransformComponent.cpp(12): note: type is 'unknown-type'
+TransformComponent.cpp(12): error C2228: left of '.y' must have class/struct/union
+  TransformComponent.cpp(12): note: type is 'unknown-type'

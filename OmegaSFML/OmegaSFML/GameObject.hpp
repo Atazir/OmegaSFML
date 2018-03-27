@@ -2,6 +2,8 @@
 #include "BaseComponent.hpp"
 #include "TransformComponent.hpp"
 //#include "RigidbodyComponent.hpp"
+//#include "AudioComponent.hpp"
+#include "SpriteComponent.hpp"
 #include <iostream>
 #include <list>
 #include <vector>
@@ -15,7 +17,7 @@ public:
 
 	int GetObjectID() const { return m_UniqueID; }
 
-	void AddComponent(BaseComponent* component, TransformComponent* transform);
+	void AddComponent(BaseComponent* component, TransformComponent* transform, SpriteComponent* sprite);
 
 	void Update(float msec);
 	void Awake();
@@ -34,6 +36,8 @@ private:
 	GameObject* m_Parent;
 	std::vector<GameObject*> m_Children; //A vector using this gameObject that lists its children (transform component, rigidbody, bounding box, etc)
 
+	//sf::Sprite m_Sprite;
 	sf::Transform worldTransform;
 	std::vector<BaseComponent*> m_Components;
+	std::vector<SpriteComponent*> m_Sprites;
 };

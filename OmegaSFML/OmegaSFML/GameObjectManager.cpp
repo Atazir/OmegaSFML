@@ -44,7 +44,8 @@ GameObject* GameObjectManager::CreateObject()
 
 	BaseComponent* baseComponent = new BaseComponent();
 	TransformComponent* objTransform = new TransformComponent();
-	newObj->AddComponent(baseComponent, objTransform);
+	SpriteComponent* objSprite = new SpriteComponent();
+	newObj->AddComponent(baseComponent, objTransform, objSprite);
 
 	m_Objects[newObj->GetObjectID()] = newObj;
 

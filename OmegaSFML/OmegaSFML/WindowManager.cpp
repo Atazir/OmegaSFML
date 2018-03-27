@@ -5,22 +5,22 @@ using namespace sf;
 
 void WindowManager::Show(RenderWindow& renderWindow)
 {
-	Image image;
+	Image splashImage;
 
-	if (image.loadFromFile("../../Assets/SplashScreen.jpeg") != true)
+	if (splashImage.loadFromFile("../../Assets/SplashScreen.jpeg") != true)
 	{
 		printf("Didn't load the file");
 		return;
 	}
 	
 
-	Sprite sprite;
-	Texture texture;
-	texture.loadFromImage(image, IntRect());
-	sprite.setTexture(texture);
+	Sprite splashSprite;
+	Texture splashTexture;
+	splashTexture.loadFromImage(splashImage, IntRect());
+	splashSprite.setTexture(splashTexture);
 
 	renderWindow.clear();
-	renderWindow.draw(sprite);
+	renderWindow.draw(splashSprite);
 	renderWindow.display();
 
 }

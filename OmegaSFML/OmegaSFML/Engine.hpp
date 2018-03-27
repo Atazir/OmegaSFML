@@ -5,7 +5,6 @@
 #include "PhysicsManager.hpp"
 #include "WindowManager.hpp"
 
-#include <cassert>
 #include <Windows.h>
 #include <direct.h>
 #include <math.h>

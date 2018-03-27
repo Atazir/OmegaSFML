@@ -8,25 +8,26 @@ TransformComponent::TransformComponent()
 
 void TransformComponent::Awake()
 {
-	std::cout << "Transform component is awake" << std::endl;
-	//m_Transform.getMatrix();
-	//m_Transform.getMatrix();
-	//
-	//m_Transform.translate(Vector2f(m_Position.x, m_Position.y));
-	//m_Transform.rotate(0, Vector2f(m_Position.x, m_Rotation.x));
-	//m_Transform.rotate(0, Vector2f(m_Position.y, m_Rotation.y));
-	//m_Transform.scale(1, 1);
-	//
-	//transformMatrix.getMatrix();
-	//transformMatrix = m_Transform;
+	m_Transform.getMatrix(); ///Gets the default 4x4 Matrix
+	m_Transform.translate(m_Position.x, m_Position.y); ///Default Translation
+	m_Transform.rotate(0); ///Default Rotation
+	m_Transform.scale(1,1); ///Default Scale
 
-	//sf::Transform mat4 Model;
+	transformMatrix.getMatrix(); ///Gets the 4x4 matrix for the world transform
+	transformMatrix = m_Transform; ///Makes the objects world transform the same as the objects transform.
+
+	/*sf::Transform mat4 Model;
 	//Model = glm::translate(Model, glm::vec3(m_Position.x, m_Position.y, m_Position.z));
 	//Model = glm::rotate(Model, glm::radians(m_Rotation.x), X_AXIS);
 	//Model = glm::rotate(Model, glm::radians(m_Rotation.y), Y_AXIS);
 	//Model = glm::rotate(Model, glm::radians(m_Rotation.z), Z_AXIS);
 	//Model = glm::scale(Model, glm::vec3(m_Scale.x, m_Scale.y, m_Scale.z));
-	//transformMatrix = Model;
+	transformMatrix = Model;*/
+
+	///Testing Debugs
+	//std::cout << m_Position.x << std::endl;
+	//std::cout << m_Position.y << std::endl;
+	//std::cout << "Transform component is awake" << std::endl;
 }
 
 void TransformComponent::Start()
@@ -46,11 +47,21 @@ void TransformComponent::Update()
 	//Model = glm::rotate(Model, glm::radians(m_Rotation.z), Z_AXIS);
 	//Model = glm::scale(Model, glm::vec3(m_Scale.x, m_Scale.y, m_Scale.z));
 	//transformMatrix = Model;
+	if (!updateHappening)
+	{
+		std::cout << "The Transform component is Updating frequently." << std::endl;
+		updateHappening = true;
+	}
 }
 
 void TransformComponent::LateUpdate()
 {
-	//std::cout << "The Transform component is updating frequently." << std::endl;
+	if (!lateUpdateHappening)
+	{
+		std::cout << "The Transform component is LateUpdating frequently." << std::endl;
+		lateUpdateHappening = true;
+	}
+	
 }
 
 void TransformComponent::AddTransform(sf::Transform transform)
