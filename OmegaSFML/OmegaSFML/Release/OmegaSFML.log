@@ -1,0 +1,110 @@
+﻿  BaseComponent.cpp
+  Engine.cpp
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\TransformComponent.hpp(9): error C3646: 'm_Position': unknown override specifier
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\TransformComponent.hpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+Engine.cpp(201): warning C4244: 'initializing': conversion from 'const DWORDLONG' to 'unsigned int', possible loss of data
+  GameObject.cpp
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\TransformComponent.hpp(9): error C3646: 'm_Position': unknown override specifier
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\TransformComponent.hpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  GameObjectManager.cpp
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\TransformComponent.hpp(9): error C3646: 'm_Position': unknown override specifier
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\TransformComponent.hpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  main.cpp
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\TransformComponent.hpp(9): error C3646: 'm_Position': unknown override specifier
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\TransformComponent.hpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  PhysicsManager.cpp
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(7): error C2011: 'AABB': 'struct' type redefinition
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(7): note: see declaration of 'AABB'
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): error C2011: 'RigidbodyComponent': 'class' type redefinition
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): note: see declaration of 'RigidbodyComponent'
+PhysicsManager.cpp(6): error C2065: 'm_Rigidbodies': undeclared identifier
+PhysicsManager.cpp(8): error C2065: 'rb': undeclared identifier
+PhysicsManager.cpp(10): error C2065: 'rigidBody': undeclared identifier
+PhysicsManager.cpp(10): error C2228: left of '.aabb' must have class/struct/union
+  PhysicsManager.cpp(10): note: type is 'unknown-type'
+PhysicsManager.cpp(10): error C2228: left of '.bLeft' must have class/struct/union
+PhysicsManager.cpp(10): error C2228: left of '.x' must have class/struct/union
+PhysicsManager.cpp(10): error C2065: 'rb': undeclared identifier
+PhysicsManager.cpp(10): error C2228: left of '.tRight' must have class/struct/union
+PhysicsManager.cpp(11): error C2228: left of '.x' must have class/struct/union
+PhysicsManager.cpp(11): error C2065: 'rigidBody': undeclared identifier
+PhysicsManager.cpp(11): error C2228: left of '.aabb' must have class/struct/union
+  PhysicsManager.cpp(11): note: type is 'unknown-type'
+PhysicsManager.cpp(11): error C2228: left of '.tRight' must have class/struct/union
+PhysicsManager.cpp(11): error C2065: 'rb': undeclared identifier
+PhysicsManager.cpp(11): error C2228: left of '.bLeft' must have class/struct/union
+PhysicsManager.cpp(12): error C2228: left of '.x' must have class/struct/union
+PhysicsManager.cpp(12): error C2065: 'Mathf': undeclared identifier
+PhysicsManager.cpp(12): error C2228: left of '.Abs' must have class/struct/union
+  PhysicsManager.cpp(12): note: type is 'unknown-type'
+PhysicsManager.cpp(12): error C2065: 'rigidBody': undeclared identifier
+PhysicsManager.cpp(12): error C2228: left of '.aabb' must have class/struct/union
+  PhysicsManager.cpp(12): note: type is 'unknown-type'
+PhysicsManager.cpp(12): error C2228: left of '.bLeft' must have class/struct/union
+PhysicsManager.cpp(12): error C2228: left of '.y' must have class/struct/union
+PhysicsManager.cpp(12): error C2065: 'rb': undeclared identifier
+PhysicsManager.cpp(12): error C2228: left of '.tRight' must have class/struct/union
+PhysicsManager.cpp(13): error C2065: 'Mathf': undeclared identifier
+PhysicsManager.cpp(13): error C2228: left of '.Abs' must have class/struct/union
+  PhysicsManager.cpp(13): note: type is 'unknown-type'
+PhysicsManager.cpp(13): error C2065: 'rigidBody': undeclared identifier
+PhysicsManager.cpp(13): error C2228: left of '.currentVelocity' must have class/struct/union
+  PhysicsManager.cpp(13): note: type is 'unknown-type'
+PhysicsManager.cpp(13): error C2228: left of '.y' must have class/struct/union
+PhysicsManager.cpp(50): error C2027: use of undefined type 'RigidbodyComponent'
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): note: see declaration of 'RigidbodyComponent'
+PhysicsManager.cpp(50): error C2227: left of '->Integrate' must point to class/struct/union/generic type
+  RigidbodyComponent.cpp
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(7): error C2011: 'AABB': 'struct' type redefinition
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(7): note: see declaration of 'AABB'
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): error C2011: 'RigidbodyComponent': 'class' type redefinition
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): note: see declaration of 'RigidbodyComponent'
+RigidbodyComponent.cpp(6): error C2027: use of undefined type 'RigidbodyComponent'
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): note: see declaration of 'RigidbodyComponent'
+RigidbodyComponent.cpp(11): error C2027: use of undefined type 'RigidbodyComponent'
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): note: see declaration of 'RigidbodyComponent'
+RigidbodyComponent.cpp(13): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+RigidbodyComponent.cpp(16): error C2027: use of undefined type 'RigidbodyComponent'
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): note: see declaration of 'RigidbodyComponent'
+RigidbodyComponent.cpp(19): error C2065: 'boundingBox': undeclared identifier
+RigidbodyComponent.cpp(22): error C2027: use of undefined type 'RigidbodyComponent'
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): note: see declaration of 'RigidbodyComponent'
+RigidbodyComponent.cpp(24): error C2065: 'obeysGravity': undeclared identifier
+RigidbodyComponent.cpp(24): error C3861: 'isGrounded': identifier not found
+RigidbodyComponent.cpp(26): error C2065: 'gravity': undeclared identifier
+RigidbodyComponent.cpp(26): error C3861: 'AddForce': identifier not found
+RigidbodyComponent.cpp(30): error C2065: 'currentVelocity': undeclared identifier
+RigidbodyComponent.cpp(30): error C2228: left of '.y' must have class/struct/union
+  RigidbodyComponent.cpp(30): note: type is 'unknown-type'
+RigidbodyComponent.cpp(32): error C2065: 'currentVelocity': undeclared identifier
+RigidbodyComponent.cpp(32): error C2228: left of '.y' must have class/struct/union
+  RigidbodyComponent.cpp(32): note: type is 'unknown-type'
+RigidbodyComponent.cpp(36): error C2065: 'totalForces': undeclared identifier
+RigidbodyComponent.cpp(36): error C2065: 'mass': undeclared identifier
+RigidbodyComponent.cpp(37): error C2065: 'mass': undeclared identifier
+RigidbodyComponent.cpp(42): error C2065: 'currentVelocity': undeclared identifier
+RigidbodyComponent.cpp(45): error C2065: 'temp': undeclared identifier
+RigidbodyComponent.cpp(45): error C2065: 'currentVelocity': undeclared identifier
+RigidbodyComponent.cpp(49): error C2065: 'totalForces': undeclared identifier
+RigidbodyComponent.cpp(52): error C2027: use of undefined type 'RigidbodyComponent'
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): note: see declaration of 'RigidbodyComponent'
+RigidbodyComponent.cpp(54): error C2065: 'grounded': undeclared identifier
+RigidbodyComponent.cpp(54): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+RigidbodyComponent.cpp(55): error C2065: 'grounded': undeclared identifier
+RigidbodyComponent.cpp(58): error C2027: use of undefined type 'RigidbodyComponent'
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): note: see declaration of 'RigidbodyComponent'
+RigidbodyComponent.cpp(60): error C2065: 'totalForces': undeclared identifier
+RigidbodyComponent.cpp(63): error C2027: use of undefined type 'RigidbodyComponent'
+  c:\users\tech\documents\omegasfml\omegasfml\omegasfml\RigidbodyComponent.hpp(12): note: see declaration of 'RigidbodyComponent'
+RigidbodyComponent.cpp(66): error C2065: 'currentVelocity': undeclared identifier
+RigidbodyComponent.cpp(67): error C2065: 'totalForces': undeclared identifier
+  SpriteComponent.cpp
+  WindowManager.cpp
+  TransformComponent.cpp
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\TransformComponent.hpp(9): error C3646: 'm_Position': unknown override specifier
+c:\users\tech\documents\omegasfml\omegasfml\omegasfml\TransformComponent.hpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+TransformComponent.cpp(12): error C2065: 'm_Position': undeclared identifier
+TransformComponent.cpp(12): error C2228: left of '.x' must have class/struct/union
+  TransformComponent.cpp(12): note: type is 'unknown-type'
+TransformComponent.cpp(12): error C2228: left of '.y' must have class/struct/union
+  TransformComponent.cpp(12): note: type is 'unknown-type'

@@ -3,6 +3,9 @@
 //#include "TransformComponent.hpp"
 //#include "SpriteComponent.hpp"
 
+sf::Vector2f RigidbodyComponent::temp;
+
+
 void RigidbodyComponent::Awake()
 {
 	

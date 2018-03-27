@@ -1,6 +1,6 @@
 #pragma once
 #include <cmath>
-#include <math.h>
+//#include <math.h>
 #include <vector>
 #include <map>
 //#include "GameObjectManager.hpp"
@@ -31,7 +31,7 @@ public:
 	void positionalCorrection();
 	void updatePhysics();
 
-	void AddRigidbody(RigidbodyComponent* rigidbody);
+	static void AddRigidbody(RigidbodyComponent* rigidbody);
 	void IntegrateBodies(float dT);
 
 	static void Start();

@@ -1,5 +1,6 @@
 #include "BaseComponent.hpp"
 #include <cmath>
+#pragma once
 
 using namespace sf;
 
@@ -30,7 +31,7 @@ public:
 
 	//Rect(Vector2f(0.0f, 0.0f), Vector2f(1.0f, 1.0f))
 
-	static Vector2f temp;
+	static Vector2f temp; ///REQUIRES DECLARATION IN THE CPP IN ORDER TO USE STATIC FILES
 	
 	void AddForce(Vector2f force);
 

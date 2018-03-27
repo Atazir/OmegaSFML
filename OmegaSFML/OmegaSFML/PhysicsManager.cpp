@@ -1,16 +1,18 @@
 #include "PhysicsManager.hpp"
-#include "RigidbodyComponent.hpp"
+//#include "RigidbodyComponent.hpp"
+
+PhysicsManager pMan;
 
 bool PhysicsManager::isGrounded(RigidbodyComponent * rigidbody)
 {
-	for each(RigidbodyComponent* rb in m_Rigidbodies)
+	for each(RigidbodyComponent* rb in pMan.m_RigidBodies)
 	{
 		if (rb != rigidbody)
 		{
-			if (rigidBody.aabb.bLeft.x < rb.aabb.tRight.x
-				&& rigidBody.aabb.tRight.x > rb.aabb.bLeft.x
-				&& Mathf.Abs(rigidBody.aabb.bLeft.y - rb.aabb.tRight.y) <= groundedTol) {
-				if (Mathf.Abs(rigidBody.currentVelocity.y) < groundedTol)
+			if (rigidbody->aabb.bLeft.x < rb->aabb.tRight.x
+				&& rigidbody->aabb.tRight.x > rb->aabb.bLeft.x
+				&& std::abs(rigidbody->aabb.bLeft.y - rb->aabb.tRight.y) <= pMan.groundedTol) {
+				if (std::abs(rigidbody->currentVelocity.y) < pMan.groundedTol)
 					return true;
 			}
 		}
@@ -40,7 +42,7 @@ void PhysicsManager::updatePhysics()
 
 void PhysicsManager::AddRigidbody(RigidbodyComponent* rigidbody)
 {
-	m_RigidBodies.push_back(rigidbody);
+	pMan.m_RigidBodies.push_back(rigidbody);
 }
 
 void PhysicsManager::IntegrateBodies(float dT)
