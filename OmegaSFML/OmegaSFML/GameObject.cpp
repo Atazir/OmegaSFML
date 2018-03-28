@@ -24,6 +24,33 @@ void GameObject::Start()
 
 void GameObject::Update(float msec) 
 {
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+	{
+		//m_Transform.translate(-1.0f, 0.0f);
+		//m_Position.x -= 1.0f;
+	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+	{
+		//m_Transform.translate(1.0f, 0.0f);
+		//m_Position.x += 1.0f;
+		//transformMatrix.translate(1.0f, 0.0f);
+		//std::cout << m_Position.x << std::endl;
+		this->worldTransform.translate(100.0f, 0.0f);
+		
+	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+	{
+		//m_Transform.translate(0.0f, 1.0f);
+		//m_Position.y += 1.0f;
+	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+	{
+		//m_Transform.translate(0.0f, -1.0f);
+		//m_Position.y -= 1.0f;
+	}
 	//if (m_Parent) { //This node has a parent...
 	//	//worldTransform = m_Parent->worldTransform * transform;
 	//}
@@ -44,9 +71,10 @@ void GameObject::LateUpdate(float msec)
 		(*i)->Draw();
 		//std::cout << "SpriteComonent LateUpdate" << std::endl;
 	}
-		for(std::vector<GameObject*>::iterator i = m_Children.begin(); i != m_Children.end();    ++i) {
+		for(std::vector<GameObject*>::iterator i = m_Children.begin(); i != m_Children.end();    ++i) 
+		{
 				(*i)->LateUpdate(msec);
-		    }
+		}
 
 	//Updates are being cycled for components.
 	//std::cout << "The Components are updating." << std::endl;

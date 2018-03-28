@@ -1,3 +1,4 @@
+#pragma once
 #include "Engine.hpp"
 //#include "SpriteComponent.hpp"
 
@@ -12,6 +13,11 @@ Omega::GameState Omega::_gameState;
 RenderWindow Omega::_mainWindow;
 GameObjectManager Omega::_gameObjectManager;
 PhysicsManager Omega::_physicsManager;
+
+//bool Omega::moveLeft = false;
+//bool Omega::moveRight = false;
+//bool Omega::moveUp = false;
+//bool Omega::moveDown = false;
 
 void Omega::Initialize(void)
 {
@@ -112,6 +118,10 @@ void Omega::GameLoop(sf::Time time)
 	while (_mainWindow.isOpen()) 
 	{
 		//WindowManager::Show(_mainWindow);
+		//Omega::moveLeft = false;
+		//Omega::moveRight = false;
+		//Omega::moveUp = false;
+		//Omega::moveDown = false;
 
 		//update systems
 		_gameObjectManager.Update(0);
@@ -121,9 +131,10 @@ void Omega::GameLoop(sf::Time time)
 		_gameObjectManager.LateUpdate(0);
 		_physicsManager.LateUpdate(0);
 
-		//_mainWindow.draw(_gameObjectManager.);
+		/*_mainWindow.draw(_gameObjectManager.);
 		//_mainWindow.clear();
-		//_mainWindow.display();
+		//_mainWindow.display();*/
+
 
 		// check all the window's events that were triggered since the last iteration of the loop
 		sf::Event event;

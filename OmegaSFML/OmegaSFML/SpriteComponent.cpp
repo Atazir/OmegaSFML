@@ -46,7 +46,7 @@ void SpriteComponent::Draw()
 	//RenderWindow _mainWindow;
 	
 	Omega::_mainWindow.clear();
-	Omega::_mainWindow.draw(m_Sprite);
+	Omega::_mainWindow.draw(playerSprite);
 	Omega::_mainWindow.display();
 	//std::cout << "Draw is being called" << std::endl;
 }

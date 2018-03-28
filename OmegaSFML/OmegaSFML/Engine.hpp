@@ -1,3 +1,4 @@
+#pragma once
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 //#include <SFML/Audio.hpp>
@@ -23,6 +24,11 @@ public:
 	static void Start();
 	static void Initialize();
 	static RenderWindow _mainWindow;
+
+	//static bool moveLeft;
+	//static bool moveRight;
+	//static bool moveUp;
+	//static bool moveDown;
 
 private:
 	static void GameLoop(sf::Time time);

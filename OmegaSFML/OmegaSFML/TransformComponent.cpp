@@ -1,4 +1,6 @@
+#pragma once
 #include "TransformComponent.hpp"
+#include "Engine.hpp"
 
 TransformComponent::TransformComponent()
 {
@@ -47,6 +49,11 @@ void TransformComponent::Update()
 	//Model = glm::rotate(Model, glm::radians(m_Rotation.z), Z_AXIS);
 	//Model = glm::scale(Model, glm::vec3(m_Scale.x, m_Scale.y, m_Scale.z));
 	//transformMatrix = Model;
+
+	
+
+	//m_Transform.translate(m_Position.x, m_Position.y);
+
 	if (!updateHappening)
 	{
 		std::cout << "The Transform component is Updating frequently." << std::endl;
@@ -56,6 +63,26 @@ void TransformComponent::Update()
 
 void TransformComponent::LateUpdate()
 {
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+	{
+		m_Position.x -= 1.0f;
+	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+	{
+		m_Position.x += 1.0f;
+	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+	{
+		m_Position.y += 1.0f;
+	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+	{
+		m_Position.y -= 1.0f;
+	}
+
 	if (!lateUpdateHappening)
 	{
 		std::cout << "The Transform component is LateUpdating frequently." << std::endl;
