@@ -28,6 +28,9 @@ void GameObject::Update(float msec)
 	{
 		//m_Transform.translate(-1.0f, 0.0f);
 		//m_Position.x -= 1.0f;
+		m_Transform.transformMatrix.translate(-1.0, 0.0f);
+		this->m_Transform.transformMatrix.translate(-1.0f, 0.0f);
+		//std::cout << "Moving left" << std::endl; ///Is updating, however the image is not being drawn at the new location.
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
@@ -37,6 +40,7 @@ void GameObject::Update(float msec)
 		//transformMatrix.translate(1.0f, 0.0f);
 		//std::cout << m_Position.x << std::endl;
 		this->worldTransform.translate(100.0f, 0.0f);
+		std::cout << "Moving left" << std::endl; ///Is updating, however the image is not being drawn at the new location.
 		
 	}
 

@@ -1,8 +1,7 @@
 ﻿  GameObject.cpp
-  TransformComponent.cpp
   Generating code
-  4 of 684 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+  4 of 709 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    2 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   OmegaSFML.vcxproj -> D:\Users\Cody\Documents\Files\School\Y3S2\SFML_Engines\Omega\OmegaSFML\\..\Game\x64\Release\OmegaSFML.exe

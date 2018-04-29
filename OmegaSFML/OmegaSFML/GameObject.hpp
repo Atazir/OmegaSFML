@@ -27,7 +27,7 @@ public:
 	void SetParent(GameObject& parent) { m_Parent = &parent; }
 	void AddChild(GameObject* child);
 
-	//TransformComponent m_Transform; //This objects local transform
+	TransformComponent m_Transform; //This objects local transform
 	//RigidbodyComponent m_Rigidbody;
 
 private:
@@ -40,4 +40,5 @@ private:
 	sf::Transform worldTransform;
 	std::vector<BaseComponent*> m_Components;
 	std::vector<SpriteComponent*> m_Sprites;
+	std::vector<TransformComponent*> m_Transforms;
 };
